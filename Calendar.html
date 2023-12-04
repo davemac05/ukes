@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<xxxscript type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+
+<link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=11dnb8L1tr5U0z0sWPAgvtzFVkfkg8SOn" >
+
+<script type="text/javascript">
+
+ 
+var _calData;
+
+/*
+$(document).ready(function () {
+
+    
+
+
+    google.script.run.withSuccessHandler(onGetDataSuccess)
+    .getCalData();
+
+
+});
+
+function onGetDataSuccess(data) {
+    document.body.style.cursor = 'wait';
+
+    _calData = data;
+
+    console.log("onGetDataSuccess");
+
+  setHeading();
+  setContent();
+
+
+  hideSpinner();
+   
+
+
+}
+
+function  setHeading()
+{
+  var n=_calData.length-1;
+$("#divHdTerm").text("Term " + _calData[n-1].term + " "  + _calData[n-1].year);
+}
+
+function  setContent()
+{
+  var n=_calData.length-1;
+  html="";
+  for (var i = 0; i <= n; i++) 
+  {
+      html +="<div class='row ";
+      if(_calData[i].status ==1 )
+        html +="current";
+      else if(_calData[i].status ==0 )
+        html +="past";
+
+        html +="'>";
+        html +="<div class='col-4  col-md-2 date'>";
+        html +=_calData[i].datex;
+        html +="<div class='time'>";
+        html +=_calData[i].timex;
+        html +="</div>";
+        html +="</div>";
+
+        html +="<div class='col-6 col-md'>";
+        html +=_calData[i].program;
+        html +="<div class='title'>";
+        html +=_calData[i].title;
+        html +="</div>";
+        html +="</div>";
+
+        html +="<div class='col-2 col-md-2 text-center'>";
+        html +=_calData[i].mc;
+        html +="</div>";
+
+        html +="<div class='col-4 col-md-1 text-center'>";
+        if(_calData[i].setlist_pdf !="") 
+          html += "<a href='" + _calData[i].setlist_pdf + "' target='_blank'><i class='bi bi-file-pdf text-info-emphasis'></i></a>";
+        html +="</div>";
+
+        html +="<div class='col-4 col-md-1 text-center'>";
+        if(_calData[i].setlist_folder !="") 
+          html += "<a href='" + _calData[i].setlist_folder + "' target='_blank'><i class='bi bi-folder text-info-emphasis'></i></a>";
+        html +="</div>";
+
+        html +="<div class='col-4 col-md-1 text-center'>";
+        if(_calData[i].youtube_id !="") 
+          html += "<a href='https://www.youtube.com/watch?v=" + _calData[i].youtube_id + "' target='_blank'><i class='bi bi-youtube text-danger'></i></a>";
+        html +="</div>";
+
+
+        html +="</div>";
+
+   
+
+
+
+
+  }
+
+    $("#divCn").append(html);
+}
+
+function hideSpinner()
+{
+  $("#spinner").hide();
+}
+*/
+
+
+</script>
+
+
+  </head>
+  <body>
+
+    
+
+
+
+    <div class="text-left">
+
+<div class="row header" id="divHd">
+  
+    <div class="col-4  col-md-2" id="divHdTerm">
+     
+    </div>
+    <div class="col-6 col-md">
+      Meeting/Class Type
+    </div>
+    <div class="col-2 col-md-2 text-center">
+      MC
+    </div>
+    <div class="col-4 col-md-1 text-center">
+      Setlist PDF
+    </div>
+     <div class="col-4 col-md-1 text-center">
+      Setlist Folder
+    </div>
+     <div class="col-4 col-md-1 text-center">
+      Youtube
+    </div>
+</div>
+
+      
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      11 Oct 2023      <div class='time'>
+               7:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          vXQPm0DL3BM          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      18 Oct 2023      <div class='time'>
+               7:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More UNPLUGGED    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          PXJlxRPzoPA          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      25 Oct 2023      <div class='time'>
+               6:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More Beginners    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      25 Oct 2023      <div class='time'>
+               7:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Ian    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+                 <a href="
+          https://drive.google.com/file/d/1iEoMpnpVHxnLI2ue-966GP98zD2d3his/view?usp=drivesdk          " target='_blank'><i class='bi bi-file-pdf text-info-emphasis'></i></a>
+               </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="
+          https://drive.google.com/drive/folders/10omMX12hK3J3XUIpUq1ohUUdSAPm9yjc          " target='_blank'><i class='bi bi-folder text-info-emphasis'></i></a>
+               </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          P-73idX5HTw          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      1 Nov 2023      <div class='time'>
+               6:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More Beginners    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      1 Nov 2023      <div class='time'>
+               7:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Darren    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          fQPD4f2-XWo          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      8 Nov 2023      <div class='time'>
+               6:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More Finger Pickin&#39;    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      8 Nov 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Judy    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          ilNw4qKny40          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      15 Nov 2023      <div class='time'>
+               6:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More Finger Pickin&#39;    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      15 Nov 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More UNPLUGGED    </div>
+    <div class="col-2 col-md-2 text-center">
+       Vicki/Darren    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          Lr34JH6mm7U          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      22 Nov 2023      <div class='time'>
+               6:30PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More Finger Pickin&#39;    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      22 Nov 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Vicki    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          sIyXdp4Pjio          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+                 <div class="row past">
+       
+    <div class="col-4  col-md-2 date" >
+      29 Nov 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Ross    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          _HSWrhDxMC8          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+              <div class="row current">
+       
+    <div class="col-4  col-md-2 date" >
+      6 Dec 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+       Ross/Vicki    </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          Vaqdg-eHE8s          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+            
+          <div class="row">
+  
+    <div class="col-4  col-md-2 date" >
+      13 Dec 2023      <div class='time'>
+               7:00PM
+        </div>
+    </div>
+    <div class="col-6 col-md">
+     Ukes &#39;n&#39; More    </div>
+    <div class="col-2 col-md-2 text-center">
+           </div>
+    <div class="col-4 col-md-1 text-center">
+      
+           </div>
+     <div class="col-4 col-md-1 text-center">
+           </div>
+     <div class="col-4 col-md-1 text-center">
+                 <a href="https://www.youtube.com/watch?v=
+          pkMbD79F9vA          " target='_blank'><i class='bi bi-youtube text-danger'></i></a>
+               </div>
+</div>
+
+           
+     
+     
+  
+<div class="info">All times are  Australian Eastern Time (AET)</div>
+    
+   
+  </body>
+</html>
